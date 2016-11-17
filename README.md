@@ -1,6 +1,7 @@
 # ucenter
 ## 用户中心demo
 ### 用户表数据库设计
+``` sql
 CREATE TABLE `user` (
   `uid` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `phone_no` varchar(100) NOT NULL DEFAULT '',
@@ -15,7 +16,7 @@ CREATE TABLE `user` (
   `update_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8;
-
+```
 ### 接口设计
 #### 注册接口
 
